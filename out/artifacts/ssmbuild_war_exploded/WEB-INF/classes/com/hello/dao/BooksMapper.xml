@@ -18,4 +18,7 @@
     <select id="queryAllBooks" resultType="Books">
         select * from books
     </select>
+    <select id="queryBookByName" resultType="Books">
+        select * from books where bookName = #{bookName}
+    </select>
 </mapper>
